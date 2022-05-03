@@ -1,20 +1,20 @@
-%macro print_string 2
-    mov rax, 1      ; sys_write
-    mov rdi, 1      ; stdout
+%macro print_string 2 ; macro to print a string to terminal
+    mov rax, 1        ; sys_write
+    mov rdi, 1        ; stdout
     mov rsi, %1
     mov rdx, %2
     syscall
 %endmacro
 
-%macro read_string 2
-    mov rax, 0      ; sys_read
-    mov rdi, 0      ; stdin
+%macro read_string 2 ; macro to read a string from standard input 
+    mov rax, 0       ; sys_read
+    mov rdi, 0       ; stdin
     mov rsi, %1
     mov rdx, %2
     syscall
 %endmacro
 
-%macro exit 0
+%macro exit 0       ; macro to perform successful exit
     mov rax, 60     ; sys_exit
     mov rdi, 0      ; error code 0 (success)
     syscall
@@ -27,7 +27,7 @@ section .data
     hello_len:  equ $-hello
 
 section .bss
-    name_var:   resb 64
+    name_var:   resb 64     ; reserve 64 bytes of memory for inputted name
 
 section .text
     global _start
