@@ -7,4 +7,4 @@ To install the NASM assembler, simply run the command "sudo apt install nasm".
 After installing NASM, there shouldn't be anything else you have to install to run these.
 
 Contents:
-  1. Hello - Simple IO program that takes in a user's name, and says "Hello <name>". To run, run the command "./build.sh hello"
+  1. Hello - Simple IO program that takes in a user's name, and says "Hello (name)". To run, run the command "./build.sh hello"
