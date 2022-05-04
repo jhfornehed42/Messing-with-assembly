@@ -1,6 +1,6 @@
 # Messing-with-assembly
 
-Just some little programs made in x86 NASM Linux assembly
+Just some little programs made in x86_64 NASM Linux assembly
 
 I will include a bash script to assemble, link, and run all programs in this repository.
 To install the NASM assembler, simply run the command "sudo apt install nasm".
